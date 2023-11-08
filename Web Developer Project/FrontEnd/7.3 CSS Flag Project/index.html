@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    p {
+      margin: 0;
+    }
+
+    .flag {
+      width: 900px;
+      height: 600px;
+      background-color: rgb(206, 23, 23);
+      position: relative;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 60px;
+      color: white;
+    }
+
+    .box {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      background-color: rgb(55, 55, 169);
+    }
+
+    .circle {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .circle>p {
+      top: 50%;
+      left: 50%;
+      font-size: 40px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      position: absolute;
+
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p class="title">The Flag</p>
+    <div class="box">
+      <div class="circle">
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
